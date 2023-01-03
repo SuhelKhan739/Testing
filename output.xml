@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.7.4 on win32)" generated="20220720 00:23:00.214" rpa="false" schemaversion="2">
+<suite id="s1" name="Flipkart login" source="C:\Users\suhelk\PycharmProjects\Automation\Testcases\Flipkart login.robot">
+<test id="s1-t1" name="LoginFlipkart">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.flipkart.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220720 00:23:00.685" level="INFO">Opening browser 'chrome' to base url 'https://www.flipkart.com/'.</msg>
+<status status="PASS" starttime="20220720 00:23:00.684" endtime="20220720 00:23:10.544"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@class='_2KpZ6l _2doB4z']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220720 00:23:10.546" level="INFO">Clicking element 'xpath://button[@class='_2KpZ6l _2doB4z']'.</msg>
+<status status="PASS" starttime="20220720 00:23:10.545" endtime="20220720 00:23:10.720"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[@class='_1_3w1N']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220720 00:23:10.723" level="INFO">Clicking element 'xpath://a[@class='_1_3w1N']'.</msg>
+<status status="PASS" starttime="20220720 00:23:10.722" endtime="20220720 00:23:10.854"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@class='_2IX_2- VJZDxU']</arg>
+<arg>8618581435</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220720 00:23:10.856" level="INFO">Typing text '8618581435' into text field 'xpath://input[@class='_2IX_2- VJZDxU']'.</msg>
+<status status="PASS" starttime="20220720 00:23:10.855" endtime="20220720 00:23:11.052"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@class='_2IX_2- _3mctLh VJZDxU']</arg>
+<arg>Flipkart@739</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220720 00:23:11.053" level="INFO">Typing text 'Flipkart@739' into text field 'xpath://input[@class='_2IX_2- _3mctLh VJZDxU']'.</msg>
+<status status="PASS" starttime="20220720 00:23:11.052" endtime="20220720 00:23:11.218"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@class='_2KpZ6l _2HKlqd _3AWRsL']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220720 00:23:11.220" level="INFO">Clicking element 'xpath://button[@class='_2KpZ6l _2HKlqd _3AWRsL']'.</msg>
+<status status="PASS" starttime="20220720 00:23:11.220" endtime="20220720 00:23:11.315"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@title='Search for products, brands and more']</arg>
+<arg>puma x 1der vegas mens shoes</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220720 00:23:11.319" level="INFO">Typing text 'puma x 1der vegas mens shoes' into text field 'xpath://input[@title='Search for products, brands and more']'.</msg>
+<status status="PASS" starttime="20220720 00:23:11.318" endtime="20220720 00:23:11.592"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3sec</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220720 00:23:14.606" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220720 00:23:11.592" endtime="20220720 00:23:14.606"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@class='L0Z3Pu']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220720 00:23:14.608" level="INFO">Clicking element 'xpath://button[@class='L0Z3Pu']'.</msg>
+<status status="PASS" starttime="20220720 00:23:14.607" endtime="20220720 00:23:14.867"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3sec</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220720 00:23:17.882" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220720 00:23:14.868" endtime="20220720 00:23:17.882"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:(//img[@class='_2r_T1I'])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220720 00:23:17.884" level="INFO">Clicking element 'xpath:(//img[@class='_2r_T1I'])[1]'.</msg>
+<msg timestamp="20220720 00:23:18.290" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-26.png"&gt;&lt;img src="selenium-screenshot-26.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220720 00:23:18.299" level="FAIL">Element with locator 'xpath:(//img[@class='_2r_T1I'])[1]' not found.</msg>
+<status status="FAIL" starttime="20220720 00:23:17.884" endtime="20220720 00:23:18.300"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>8sec</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220720 00:23:18.302" endtime="20220720 00:23:18.302"/>
+</kw>
+<kw name="click elemect">
+<arg>xpath:(//div[@class='_2C41yO _1pH70n _31hAvz'])[2]</arg>
+<status status="NOT RUN" starttime="20220720 00:23:18.308" endtime="20220720 00:23:18.308"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5sec</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220720 00:23:18.310" endtime="20220720 00:23:18.310"/>
+</kw>
+<kw name="click elemect">
+<arg>xpath:(//a[@class='_1fGeJ5 _2UVyXR _31hAvz'])[5]</arg>
+<status status="NOT RUN" starttime="20220720 00:23:18.316" endtime="20220720 00:23:18.316"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5sec</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220720 00:23:18.317" endtime="20220720 00:23:18.317"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@class='_2KpZ6l _2U9uOA ihZ75k _3AWRsL']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 00:23:18.318" endtime="20220720 00:23:18.318"/>
+</kw>
+<status status="FAIL" starttime="20220720 00:23:00.681" endtime="20220720 00:23:18.319">Element with locator 'xpath:(//img[@class='_2r_T1I'])[1]' not found.</status>
+</test>
+<status status="FAIL" starttime="20220720 00:23:00.217" endtime="20220720 00:23:18.323"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Flipkart login">Flipkart login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
