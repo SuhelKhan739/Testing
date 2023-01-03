@@ -2,13 +2,15 @@
 Library     SeleniumLibrary
 
 *** Variables ***
-${open browser}     https://www.flipkart.com/  chrome
-${click}    xpath://button[@class='_2KpZ6l _2doB4z']
+${open browser}     https://www.flipkart.com/
+${click}    xpath:/html/body/div[2]/div/div/button
+${click2}   xpath://a[@class='_1_3w1N']
 *** Test Cases ***
 LoginFlipkart
-    open browser  ${open browser}
+    open browser  ${open browser}   chrome
+    sleep   10
     click Element   ${click}
-    click Element   xpath://a[@class='_1_3w1N']
+    click Element   ${click2}
     input text  xpath://input[@class='_2IX_2- VJZDxU']  8618581435     #enter your id
     input text  xpath://input[@class='_2IX_2- _3mctLh VJZDxU']  Flipkart@739     #enter your password
     click element   xpath://button[@class='_2KpZ6l _2HKlqd _3AWRsL']
