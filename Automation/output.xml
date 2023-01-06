@@ -1,117 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.7.4 on win32)" generated="20230106 15:54:22.422" rpa="false" schemaversion="2">
-<suite id="s1" name="Radio2" source="C:\Users\suhelk\PycharmProjects\Automation\Automation\radio2.robot">
-<test id="s1-t1" name="radio_check">
-<kw name="radio1">
+<robot generator="Robot 4.1.3 (Python 3.7.4 on win32)" generated="20230106 17:21:03.985" rpa="false" schemaversion="2">
+<suite id="s1" name="Input boxes" source="C:\Users\suhelk\PycharmProjects\Automation\Automation\Input boxes.robot">
+<test id="s1-t1" name="Input Box Verify">
+<kw name="inputtext1">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>${url}</arg>
+<arg>${browser}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230106 15:54:22.750" level="INFO">Opening browser 'chrome' to base url 'https://www.tutorialspoint.com/selenium/selenium_automation_practice.htm'.</msg>
-<status status="PASS" starttime="20230106 15:54:22.750" endtime="20230106 15:55:06.520"/>
+<msg timestamp="20230106 17:21:04.464" level="INFO">Opening browser 'chrome' to base url 'https://www.facebook.com/'.</msg>
+<status status="PASS" starttime="20230106 17:21:04.463" endtime="20230106 17:21:10.748"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230106 15:55:06.521" endtime="20230106 15:55:06.667"/>
+<status status="PASS" starttime="20230106 17:21:10.748" endtime="20230106 17:21:10.880"/>
+</kw>
+<kw name="Get Selenium Speed" library="SeleniumLibrary">
+<var>${speed}</var>
+<doc>Gets the delay that is waited after each Selenium command.</doc>
+<msg timestamp="20230106 17:21:10.881" level="INFO">${speed} = 0 seconds</msg>
+<status status="PASS" starttime="20230106 17:21:10.880" endtime="20230106 17:21:10.882"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${speed}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230106 17:21:10.882" endtime="20230106 17:21:10.883"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230106 17:21:10.883" endtime="20230106 17:21:10.883"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${email}</var>
+<arg>id:email</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230106 17:21:10.884" level="INFO">${email} = id:email</msg>
+<status status="PASS" starttime="20230106 17:21:10.884" endtime="20230106 17:21:10.884"/>
+</kw>
+<kw name="Element Should Be Enabled" library="SeleniumLibrary">
+<arg>${email}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20230106 17:21:10.884" endtime="20230106 17:21:16.950"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${email}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230106 17:21:21.011" level="INFO">Element 'id:email' is displayed.</msg>
+<status status="PASS" starttime="20230106 17:21:16.950" endtime="20230106 17:21:21.012"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
-<arg>xpath://input[@name='firstname']</arg>
-<arg>Suhel</arg>
+<arg>${email}</arg>
+<arg>suhelk739 @gmail.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230106 15:55:06.670" level="INFO">Typing text 'Suhel' into text field 'xpath://input[@name='firstname']'.</msg>
-<status status="PASS" starttime="20230106 15:55:06.668" endtime="20230106 15:55:06.884"/>
+<msg timestamp="20230106 17:21:21.012" level="INFO">Typing text 'suhelk739 @gmail.com' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20230106 17:21:21.012" endtime="20230106 17:21:27.161"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230106 15:55:08.898" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230106 15:55:06.885" endtime="20230106 15:55:08.898"/>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>${email}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20230106 17:21:27.161" endtime="20230106 17:21:31.199"/>
 </kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>xpath://input[@name='lastname']</arg>
-<arg>khan</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230106 15:55:08.900" level="INFO">Typing text 'khan' into text field 'xpath://input[@name='lastname']'.</msg>
-<status status="PASS" starttime="20230106 15:55:08.899" endtime="20230106 15:55:09.099"/>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230106 17:21:31.199" endtime="20230106 17:21:35.376"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230106 15:55:11.116" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230106 15:55:09.099" endtime="20230106 15:55:11.116"/>
+<status status="PASS" starttime="20230106 17:21:04.462" endtime="20230106 17:21:35.377"/>
 </kw>
-<kw name="Select Radio Button" library="SeleniumLibrary">
-<arg>sex</arg>
-<arg>Male</arg>
-<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
-<msg timestamp="20230106 15:55:11.116" level="INFO">Selecting 'Male' from radio button 'sex'.</msg>
-<status status="PASS" starttime="20230106 15:55:11.116" endtime="20230106 15:55:11.206"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230106 15:55:13.214" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230106 15:55:11.206" endtime="20230106 15:55:13.215"/>
-</kw>
-<kw name="Select Radio Button" library="SeleniumLibrary">
-<arg>exp</arg>
-<arg>1</arg>
-<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
-<msg timestamp="20230106 15:55:13.215" level="INFO">Selecting '1' from radio button 'exp'.</msg>
-<status status="PASS" starttime="20230106 15:55:13.215" endtime="20230106 15:55:13.321"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230106 15:55:15.335" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230106 15:55:13.322" endtime="20230106 15:55:15.336"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>xpath:(//input[@type='text'])[3]</arg>
-<arg>01/06/2023</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230106 15:55:15.338" level="INFO">Typing text '01/06/2023' into text field 'xpath:(//input[@type='text'])[3]'.</msg>
-<status status="PASS" starttime="20230106 15:55:15.336" endtime="20230106 15:55:15.503"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230106 15:55:17.509" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230106 15:55:15.504" endtime="20230106 15:55:17.510"/>
-</kw>
-<kw name="Select Checkbox" library="SeleniumLibrary">
-<arg>Automation Tester</arg>
-<doc>Selects the checkbox identified by ``locator``.</doc>
-<msg timestamp="20230106 15:55:17.511" level="INFO">Selecting checkbox 'Automation Tester'.</msg>
-<status status="PASS" starttime="20230106 15:55:17.510" endtime="20230106 15:55:17.643"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230106 15:55:19.654" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230106 15:55:17.644" endtime="20230106 15:55:19.655"/>
-</kw>
-<kw name="Select From List By Index" library="SeleniumLibrary">
-<arg>continents</arg>
-<arg>3</arg>
-<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
-<msg timestamp="20230106 15:55:19.656" level="INFO">Selecting options from selection list 'continents' by index 3.</msg>
-<status status="PASS" starttime="20230106 15:55:19.655" endtime="20230106 15:55:19.878"/>
-</kw>
-<status status="PASS" starttime="20230106 15:54:22.749" endtime="20230106 15:55:19.878"/>
-</kw>
-<status status="PASS" starttime="20230106 15:54:22.748" endtime="20230106 15:55:19.879"/>
+<tag>demo</tag>
+<status status="PASS" starttime="20230106 17:21:04.460" endtime="20230106 17:21:35.379"/>
 </test>
-<status status="PASS" starttime="20230106 15:54:22.425" endtime="20230106 15:55:19.886"/>
+<status status="PASS" starttime="20230106 17:21:03.989" endtime="20230106 17:21:35.383"/>
 </suite>
 <statistics>
 <total>
 <stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat pass="1" fail="0" skip="0">demo</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Radio2">Radio2</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Input boxes">Input boxes</stat>
 </suite>
 </statistics>
 <errors>

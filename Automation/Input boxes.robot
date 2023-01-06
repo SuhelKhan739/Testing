@@ -11,6 +11,9 @@ Input Box Verify
 inputtext1
     open browser    ${browser}  chrome
     Maximize Browser window
+    ${speed}    Get Selenium Speed
+    Log to console  ${speed}
+    Set Selenium Speed  2
     ${email}    set variable    id:email
     Element should be enabled   ${email}
     Element should be Visible   ${email}
