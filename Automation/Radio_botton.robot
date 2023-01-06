@@ -14,6 +14,9 @@ RADIO
 *** Keywords ***
 Radio_select
     open browser    ${URL}  ${Chrome}
+    ${Implicit}     get selenium implicit wait
+    log to console  ${Implicit}
+    set selenium implicit wait  5
     sleep   5sec
     maximize browser window
     sleep   5sec
@@ -22,4 +25,6 @@ Radio_select
     select checkbox     Automation
     select checkbox     Performance
     select from list by value   testingDropdown     Manual
-    #close browser
+    get selenium implicit wait
+    log to console      ${Implicit}
+    close browser
