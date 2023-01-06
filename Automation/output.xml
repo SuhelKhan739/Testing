@@ -1,91 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.7.4 on win32)" generated="20230103 23:24:46.332" rpa="false" schemaversion="2">
-<suite id="s1" name="Flipkart login" source="C:\Users\suhelk\PycharmProjects\Automation\Automation\Flipkart login.robot">
-<test id="s1-t1" name="LoginFlipkart">
+<robot generator="Robot 4.1.3 (Python 3.7.4 on win32)" generated="20230106 15:54:22.422" rpa="false" schemaversion="2">
+<suite id="s1" name="Radio2" source="C:\Users\suhelk\PycharmProjects\Automation\Automation\radio2.robot">
+<test id="s1-t1" name="radio_check">
+<kw name="radio1">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>${open browser}</arg>
+<arg>${url}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230103 23:24:46.765" level="INFO">Opening browser 'chrome' to base url 'https://www.flipkart.com/'.</msg>
-<status status="PASS" starttime="20230103 23:24:46.764" endtime="20230103 23:25:35.848"/>
+<msg timestamp="20230106 15:54:22.750" level="INFO">Opening browser 'chrome' to base url 'https://www.tutorialspoint.com/selenium/selenium_automation_practice.htm'.</msg>
+<status status="PASS" starttime="20230106 15:54:22.750" endtime="20230106 15:55:06.520"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230106 15:55:06.521" endtime="20230106 15:55:06.667"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@name='firstname']</arg>
+<arg>Suhel</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230106 15:55:06.670" level="INFO">Typing text 'Suhel' into text field 'xpath://input[@name='firstname']'.</msg>
+<status status="PASS" starttime="20230106 15:55:06.668" endtime="20230106 15:55:06.884"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>10</arg>
+<arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230103 23:25:45.851" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20230103 23:25:35.849" endtime="20230103 23:25:45.852"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${click}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230103 23:25:45.854" level="INFO">Clicking element 'xpath:/html/body/div[2]/div/div/button'.</msg>
-<status status="PASS" starttime="20230103 23:25:45.853" endtime="20230103 23:25:45.980"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${click2}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230103 23:25:45.981" level="INFO">Clicking element 'xpath://a[@class='_1_3w1N']'.</msg>
-<status status="PASS" starttime="20230103 23:25:45.981" endtime="20230103 23:25:46.105"/>
+<msg timestamp="20230106 15:55:08.898" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230106 15:55:06.885" endtime="20230106 15:55:08.898"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
-<arg>xpath://input[@class='_2IX_2- VJZDxU']</arg>
-<arg>8618581435</arg>
+<arg>xpath://input[@name='lastname']</arg>
+<arg>khan</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230103 23:25:46.106" level="INFO">Typing text '8618581435' into text field 'xpath://input[@class='_2IX_2- VJZDxU']'.</msg>
-<status status="PASS" starttime="20230103 23:25:46.106" endtime="20230103 23:25:46.295"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>xpath://input[@class='_2IX_2- _3mctLh VJZDxU']</arg>
-<arg>Flipkart@739</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230103 23:25:46.296" level="INFO">Typing text 'Flipkart@739' into text field 'xpath://input[@class='_2IX_2- _3mctLh VJZDxU']'.</msg>
-<msg timestamp="20230103 23:25:46.563" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-17.png"&gt;&lt;img src="selenium-screenshot-17.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230103 23:25:46.652" level="FAIL">Element with locator 'xpath://input[@class='_2IX_2- _3mctLh VJZDxU']' not found.</msg>
-<status status="FAIL" starttime="20230103 23:25:46.295" endtime="20230103 23:25:46.652"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath://button[@class='_2KpZ6l _2HKlqd _3AWRsL']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20230103 23:25:46.653" endtime="20230103 23:25:46.653"/>
+<msg timestamp="20230106 15:55:08.900" level="INFO">Typing text 'khan' into text field 'xpath://input[@name='lastname']'.</msg>
+<status status="PASS" starttime="20230106 15:55:08.899" endtime="20230106 15:55:09.099"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>5sec</arg>
+<arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230103 23:25:46.654" endtime="20230103 23:25:46.654"/>
+<msg timestamp="20230106 15:55:11.116" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230106 15:55:09.099" endtime="20230106 15:55:11.116"/>
 </kw>
-<kw name="Mouse Over" library="SeleniumLibrary">
-<arg>//*[contains(text(),'My Account')]</arg>
-<doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<status status="NOT RUN" starttime="20230103 23:25:46.654" endtime="20230103 23:25:46.654"/>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>sex</arg>
+<arg>Male</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20230106 15:55:11.116" level="INFO">Selecting 'Male' from radio button 'sex'.</msg>
+<status status="PASS" starttime="20230106 15:55:11.116" endtime="20230106 15:55:11.206"/>
 </kw>
-<kw name="Mouse Over" library="SeleniumLibrary">
-<arg>xpath://*[contains(text(),'My Profile')]</arg>
-<doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<status status="NOT RUN" starttime="20230103 23:25:46.655" endtime="20230103 23:25:46.655"/>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230106 15:55:13.214" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230106 15:55:11.206" endtime="20230106 15:55:13.215"/>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath://*[contains(text(),'My Profile')]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20230103 23:25:46.655" endtime="20230103 23:25:46.655"/>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>exp</arg>
+<arg>1</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20230106 15:55:13.215" level="INFO">Selecting '1' from radio button 'exp'.</msg>
+<status status="PASS" starttime="20230106 15:55:13.215" endtime="20230106 15:55:13.321"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230106 15:55:15.335" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230106 15:55:13.322" endtime="20230106 15:55:15.336"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
-<arg>xpath://input[@title='Search for products, brands and more']</arg>
-<arg>puma x 1der vegas mens shoes</arg>
+<arg>xpath:(//input[@type='text'])[3]</arg>
+<arg>01/06/2023</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20230103 23:25:46.655" endtime="20230103 23:25:46.655"/>
+<msg timestamp="20230106 15:55:15.338" level="INFO">Typing text '01/06/2023' into text field 'xpath:(//input[@type='text'])[3]'.</msg>
+<status status="PASS" starttime="20230106 15:55:15.336" endtime="20230106 15:55:15.503"/>
 </kw>
-<status status="FAIL" starttime="20230103 23:24:46.764" endtime="20230103 23:25:46.655">Element with locator 'xpath://input[@class='_2IX_2- _3mctLh VJZDxU']' not found.</status>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230106 15:55:17.509" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230106 15:55:15.504" endtime="20230106 15:55:17.510"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>Automation Tester</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20230106 15:55:17.511" level="INFO">Selecting checkbox 'Automation Tester'.</msg>
+<status status="PASS" starttime="20230106 15:55:17.510" endtime="20230106 15:55:17.643"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230106 15:55:19.654" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230106 15:55:17.644" endtime="20230106 15:55:19.655"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>continents</arg>
+<arg>3</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20230106 15:55:19.656" level="INFO">Selecting options from selection list 'continents' by index 3.</msg>
+<status status="PASS" starttime="20230106 15:55:19.655" endtime="20230106 15:55:19.878"/>
+</kw>
+<status status="PASS" starttime="20230106 15:54:22.749" endtime="20230106 15:55:19.878"/>
+</kw>
+<status status="PASS" starttime="20230106 15:54:22.748" endtime="20230106 15:55:19.879"/>
 </test>
-<status status="FAIL" starttime="20230103 23:24:46.335" endtime="20230103 23:25:46.662"/>
+<status status="PASS" starttime="20230106 15:54:22.425" endtime="20230106 15:55:19.886"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Flipkart login">Flipkart login</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Radio2">Radio2</stat>
 </suite>
 </statistics>
 <errors>

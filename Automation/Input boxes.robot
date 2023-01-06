@@ -5,17 +5,19 @@ Default Tags  simple testing
 ${browser}  https://www.facebook.com/
 *** Test Cases ***
 Input Box Verify
-    [Tags]  demo
+   [Tags]  demo
+   inputtext1
+*** Keywords ***
+inputtext1
     open browser    ${browser}  chrome
     Maximize Browser window
     ${email}    set variable    id:email
-
     Element should be enabled   ${email}
     Element should be Visible   ${email}
-
     input text    ${email}  suhelk739 @gmail.com
-    sleep   5
+#    Wait until page contains elemeent   ${email}
     Clear Element Text  ${email}
-    sleep   5
+#    Wait until page contains elemennt   close browser
     close browser
+
 
