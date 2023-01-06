@@ -21,6 +21,7 @@ Alert1
     handle alert    dismiss
     click element   ${alert_button}
     handle alert    leave
+    alert should be present     Press a button!
     ${speed1}   get selenium speed
     log to console  ${speed1}
     close browser
