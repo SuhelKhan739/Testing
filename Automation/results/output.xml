@@ -1,55 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.7.4 on win32)" generated="20230318 22:36:16.561" rpa="false" schemaversion="2">
-<suite id="s1" name="Tags" source="C:\Users\suhelk\PycharmProjects\Automation\Automation\tags.robot">
-<test id="s1-t1" name="Test Case 1">
-<kw name="Log To Console" library="BuiltIn">
-<arg>This is test case 1</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230318 22:36:16.879" endtime="20230318 22:36:16.879"/>
+<robot generator="Robot 4.1.3 (Python 3.7.4 on win32)" generated="20230429 03:07:16.281" rpa="false" schemaversion="2">
+<suite id="s1" name="Mouse Actions" source="C:\Users\suhelk\PycharmProjects\Automation\Automation\mouse_actions.robot">
+<test id="s1-t1" name="mouse121">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230429 03:07:16.817" endtime="20230429 03:07:16.817"/>
 </kw>
-<tag>Smoke</tag>
-<status status="PASS" starttime="20230318 22:36:16.879" endtime="20230318 22:36:16.879"/>
-</test>
-<test id="s1-t2" name="Test Case 2">
-<kw name="Log To Console" library="BuiltIn">
-<arg>This is test case 2</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230318 22:36:16.887" endtime="20230318 22:36:16.887"/>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${chrome}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230429 03:07:16.819" level="INFO">Opening browser 'chrome' to base url 'https://www.globalsqa.com/demo-site/draganddrop/#Accepted%20Elements'.</msg>
+<status status="PASS" starttime="20230429 03:07:16.818" endtime="20230429 03:07:29.882"/>
 </kw>
-<tag>Regression</tag>
-<status status="PASS" starttime="20230318 22:36:16.879" endtime="20230318 22:36:16.887"/>
-</test>
-<test id="s1-t3" name="Test Case 3">
-<kw name="Log To Console" library="BuiltIn">
-<arg>This is test case 3</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230318 22:36:16.887" endtime="20230318 22:36:16.887"/>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230429 03:07:29.884" endtime="20230429 03:07:32.129"/>
 </kw>
-<tag>Regression</tag>
-<status status="PASS" starttime="20230318 22:36:16.887" endtime="20230318 22:36:16.887"/>
-</test>
-<test id="s1-t4" name="Test Case 4">
-<kw name="Log To Console" library="BuiltIn">
-<arg>This is test case 4</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230318 22:36:16.887" endtime="20230318 22:36:16.887"/>
+<kw name="mouseover1">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>xpath://*[@id="menu-item-2804"]/a/span[2]</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20230429 03:07:32.133" level="INFO">Simulating Mouse Over on element 'xpath://*[@id="menu-item-2804"]/a/span[2]'.</msg>
+<status status="PASS" starttime="20230429 03:07:32.132" endtime="20230429 03:07:36.457"/>
 </kw>
-<tag>Smoke</tag>
-<status status="PASS" starttime="20230318 22:36:16.887" endtime="20230318 22:36:16.887"/>
+<status status="PASS" starttime="20230429 03:07:32.131" endtime="20230429 03:07:36.458"/>
+</kw>
+<tag>Tag2</tag>
+<status status="PASS" starttime="20230429 03:07:16.816" endtime="20230429 03:07:36.460"/>
 </test>
-<doc>Tags in Robot Framework</doc>
-<status status="PASS" starttime="20230318 22:36:16.567" endtime="20230318 22:36:16.887"/>
+<status status="PASS" starttime="20230429 03:07:16.287" endtime="20230429 03:07:36.467"/>
 </suite>
 <statistics>
 <total>
-<stat pass="4" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="2" fail="0" skip="0">Regression</stat>
-<stat pass="2" fail="0" skip="0">Smoke</stat>
+<stat pass="1" fail="0" skip="0">Tag2</stat>
 </tag>
 <suite>
-<stat pass="4" fail="0" skip="0" id="s1" name="Tags">Tags</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Mouse Actions">Mouse Actions</stat>
 </suite>
 </statistics>
 <errors>
