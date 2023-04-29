@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.7.4 on win32)" generated="20230429 03:30:44.233" rpa="false" schemaversion="2">
-<suite id="s1" name="Keys" source="C:\Users\suhelk\PycharmProjects\Automation\Automation\Keys.robot">
-<test id="s1-t1" name="Test1">
+<robot generator="Robot 4.1.3 (Python 3.7.4 on win32)" generated="20230429 23:30:12.525" rpa="false" schemaversion="2">
+<suite id="s1" name="Call From Resource" source="C:\Users\suhelk\PycharmProjects\Automation\Automation\call from resource.robot">
+<test id="s1-t1" name="call_from_resources">
+<kw name="without keyword" library="Resources1">
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>2</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20230429 03:30:44.566" endtime="20230429 03:30:44.566"/>
+<status status="PASS" starttime="20230429 23:30:12.872" endtime="20230429 23:30:12.872"/>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${url}</arg>
-<arg>${Driver}</arg>
+<arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230429 03:30:44.567" level="INFO">Opening browser 'chrome' to base url 'https://www.facebook.com/login/'.</msg>
-<status status="PASS" starttime="20230429 03:30:44.567" endtime="20230429 03:30:51.413"/>
+<msg timestamp="20230429 23:30:12.873" level="INFO">Opening browser 'chrome' to base url 'https://www.thetestingworld.com/'.</msg>
+<status status="PASS" starttime="20230429 23:30:12.872" endtime="20230429 23:30:21.154"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230429 03:30:51.414" endtime="20230429 03:30:53.589"/>
+<status status="PASS" starttime="20230429 23:30:21.155" endtime="20230429 23:30:23.327"/>
 </kw>
-<kw name="Press Key" library="SeleniumLibrary">
-<arg>css=#email</arg>
-<arg>\\16</arg>
-<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
-<msg timestamp="20230429 03:30:53.590" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<status status="PASS" starttime="20230429 03:30:53.590" endtime="20230429 03:30:57.668"/>
+<status status="PASS" starttime="20230429 23:30:12.872" endtime="20230429 23:30:23.327"/>
 </kw>
-<kw name="Press Key" library="SeleniumLibrary">
-<arg>css=#email</arg>
-<arg>\\83</arg>
-<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
-<msg timestamp="20230429 03:30:57.669" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<status status="PASS" starttime="20230429 03:30:57.669" endtime="20230429 03:31:01.753"/>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230429 23:30:25.336" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230429 23:30:23.328" endtime="20230429 23:30:25.336"/>
 </kw>
-<kw name="Press Key" library="SeleniumLibrary">
-<arg>css=button._42ft[type='submit']</arg>
-<arg>\\13</arg>
-<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
-<msg timestamp="20230429 03:31:01.755" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<status status="PASS" starttime="20230429 03:31:01.755" endtime="20230429 03:31:05.951"/>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath://*[@id="ja-search"]/ul/li/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230429 23:30:25.337" level="INFO">Clicking link 'xpath://*[@id="ja-search"]/ul/li/a'.</msg>
+<status status="PASS" starttime="20230429 23:30:25.336" endtime="20230429 23:30:33.635"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230429 23:30:35.652" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230429 23:30:33.637" endtime="20230429 23:30:35.652"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230429 03:31:05.952" endtime="20230429 03:31:10.237"/>
+<status status="PASS" starttime="20230429 23:30:35.653" endtime="20230429 23:30:39.815"/>
 </kw>
-<status status="PASS" starttime="20230429 03:30:44.565" endtime="20230429 03:31:10.238"/>
+<status status="PASS" starttime="20230429 23:30:12.871" endtime="20230429 23:30:39.817"/>
 </test>
-<status status="PASS" starttime="20230429 03:30:44.236" endtime="20230429 03:31:10.251"/>
+<status status="PASS" starttime="20230429 23:30:12.528" endtime="20230429 23:30:39.826"/>
 </suite>
 <statistics>
 <total>
@@ -54,12 +54,9 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Keys">Keys</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Call From Resource">Call From Resource</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20230429 03:30:53.590" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230429 03:30:57.669" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230429 03:31:01.755" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
 </errors>
 </robot>
